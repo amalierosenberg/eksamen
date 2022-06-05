@@ -1,0 +1,24 @@
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.banner {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  z-index: 50;
+}
+
+.main-menu {
+  text-decoration: none;
+  list-style: none;
+  gap: 2em;
+  padding-block: 2rem;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+}
