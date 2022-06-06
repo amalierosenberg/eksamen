@@ -22,3 +22,54 @@ main {
   flex-flow: row;
   justify-content: center;
 }
+
+.cv {
+  display: flex;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  justify-content: center;
+}
+
+.flagranke {
+  height: auto;
+  width: 100vw;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+img {
+  width: 100%;
+}
+
+.splash {
+  background-size: cover;
+}
+
+.image1 {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2;
+}
+.image2 {
+  grid-column: 3 / span 1;
+  grid-row: 1 / span 1;
+}
+.image3 {
+  grid-column: 4 / span 1;
+  grid-row: 1 / span 1;
+}
+.image4 {
+  grid-column: 3 / span 2;
+  grid-row: 2 / span 1;
+}
+.image5 {
+  grid-column: 1 / span 1;
+  grid-row: 3 / span 1;
+}
+.image6 {
+  grid-column: 2 / span 3;
+  grid-row: 3 / span 1;
+}
