@@ -1,6 +1,11 @@
 main {
   max-width: 1200px;
   margin: 0 auto;
+  background-color: rgb(249, 246, 240);
+}
+
+body {
+  background-color: rgb(249, 246, 240);
 }
 
 .banner {
@@ -21,6 +26,7 @@ main {
   display: flex;
   flex-flow: row;
   justify-content: center;
+  font-family: "nuosu SIL", serif;
 }
 
 .cv {
@@ -30,9 +36,35 @@ main {
   justify-content: center;
 }
 
+.cv-flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.stilk2 {
+  max-width: 100%;
+}
+
+.stilk1 {
+  max-width: 100%;
+}
+
 .flagranke {
   height: auto;
   width: 100vw;
+}
+
+/* 02 WEB */
+
+.grid-web {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.web-flex {
+  display: flex;
+  gap: 2rem;
 }
 
 .gallery {
@@ -47,6 +79,13 @@ img {
 
 .splash {
   background-size: cover;
+  grid-column: 1 / span 2;
+  margin-bottom: 2rem;
+}
+.splash-h1 {
+  font-family: "Nuosu SIL", serif;
+  font-weight: 400;
+  font-size: 120px;
 }
 
 .image1 {
@@ -72,4 +111,123 @@ img {
 .image6 {
   grid-column: 2 / span 3;
   grid-row: 3 / span 1;
+}
+
+/* UX */
+
+.container-produkter {
+  display: flex;
+  overflow: hidden;
+  flex-direction: row;
+  gap: 1rem;
+  max-height: 100%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-inline: 8px;
+}
+
+.pre-btn,
+.nxt-btn {
+  display: inline-block;
+  border: none;
+  width: 2%;
+  height: 10%;
+  background: none;
+  cursor: pointer;
+}
+
+.pre-btn {
+  transform: rotateY(180deg);
+}
+
+.pre-btn img,
+.nxt-btn img {
+  opacity: 0.3;
+  width: 100%;
+  vertical-align: top;
+}
+
+.pre-btn:hover img,
+.nxt-btn:hover img {
+  opacity: 0.6;
+}
+
+.ux-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+figcaption {
+  font-weight: 800;
+  text-align: center;
+  font-size: 20px;
+  font-family: "Lato", sans-serif;
+}
+
+.ux-col {
+  display: flex;
+  gap: 2rem;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+h3 {
+  text-align: left;
+}
+
+/* Animation */
+
+.grid-animation {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.animation-flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.animation-flex :lastchild {
+  margin-top: auto;
+}
+
+.ideen {
+  grid-column: 1 / span 3;
+}
+
+/* 05 */
+
+.grid-design {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.design-flex {
+  display: flex;
+  flex-direction: column;
+}
+
+video {
+  width: 100%;
+  height: auto;
+  display: block;
+  aspect-ratio: 16 / 9;
+}
+
+.hjemmeside_redesign {
+  grid-column: 1 / span 3;
+}
+
+.flagranke {
+  height: auto;
+  width: 100vw;
 }
