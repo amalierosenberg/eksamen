@@ -28,8 +28,33 @@ main {
   }
 }
 
+@font-face {
+  font-family: "castehlo";
+  src: url(fonts/CASTHELO.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "nostalgia";
+  src: url(fonts/nostalgia.woff2) format("woff2");
+}
+
 body {
   background-color: rgb(249, 246, 240);
+}
+
+h1 {
+  text-align: center;
+  font-family: "castehlo";
+}
+
+h2 {
+  text-align: center;
+  font-family: "castehlo";
+}
+
+h3 {
+  text-align: left;
+  font-family: "castehlo";
 }
 
 .img {
@@ -77,24 +102,8 @@ header nav ul {
   overflow-x: auto;
 }
 
-/*
-.menu-item,
-.menu-line {
-  width: 80px;
-  height: 20px;
-  border-style: initial;
-  float: left;
-  text-align: center;
-}
-
-.menu-line {
-  width: 40px;
-  height: 0;
-  margin-top: 10px;
-} */
-
 a:hover {
-  color: rgb(225, 160, 68);
+  color: rgb(35, 27, 186);
 }
 
 .main-menu {
@@ -108,11 +117,21 @@ a:hover {
   font-family: "nuosu SIL", serif;
 }
 
+footer {
+  font-family: "nostalgia";
+  text-align: center;
+  position: sticky;
+  top: 100vh;
+  max-width: none;
+  padding: 10px;
+}
+
+/* Projekter begynder her */
+
 .cv {
   display: flex;
   grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
-  justify-content: center;
 }
 
 .cv-flex {
@@ -122,17 +141,12 @@ a:hover {
 
 .stilk2 {
   max-width: 100%;
-  max-height: 600px;
+  max-height: 550px;
 }
 
 .stilk1 {
   max-width: 100%;
-  max-height: 600px;
-}
-
-.flagranke {
-  height: auto;
-  width: 100vw;
+  max-height: 550px;
 }
 
 /* 02 WEB */
@@ -160,13 +174,12 @@ img {
 
 .splash_web {
   background-size: cover;
-  grid-column: 1 / span 2;
   margin-bottom: 2rem;
 }
 .splash_h1 {
-  font-family: "Nuosu SIL", serif;
+  font-family: "nostalgia";
   font-weight: 400;
-  font-size: 120px;
+  font-size: 30px;
 }
 
 .image1 {
@@ -198,7 +211,7 @@ img {
   width: 100%;
 }
 
-/* UX */
+/* 03 UX */
 
 .container-produkter {
   display: flex;
@@ -260,25 +273,7 @@ figcaption {
   gap: 2rem;
 }
 
-h1 {
-  text-align: center;
-  font-family: "Roboto", sans-serif;
-  text-transform: uppercase;
-}
-
-h2 {
-  text-align: center;
-  font-family: "Roboto", sans-serif;
-  text-transform: uppercase;
-}
-
-h3 {
-  text-align: left;
-  font-family: "Roboto", sans-serif;
-  text-transform: uppercase;
-}
-
-/* Animation */
+/* 04 Animation */
 
 .grid-animation {
   display: grid;
@@ -306,6 +301,22 @@ h3 {
 
 /* 05 */
 
+.image {
+  max-width: 100%;
+  min-width: 108.276px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-rows: 1fr;
+  gap: 2rem;
+}
+
+.gallery-flex {
+  display: flex;
+  gap: 2rem;
+}
+
 .grid-design {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -330,5 +341,62 @@ video {
 
 .flagranke {
   height: auto;
-  width: 100vw;
+  margin-bottom: 1rem;
+}
+
+/* VIDEO */
+/*video layout*/
+.video-player {
+  display: grid;
+  padding-block-end: var(--pad-end);
+}
+
+.video-player > * {
+  grid-area: 1/1;
+}
+video {
+  border: 1px solid #d5c17a;
+  inline-size: 100%;
+  /*fylder kun container*/
+  border: 1px solid #d5c17a;
+}
+
+/*video play knap layout*/
+/*fra Dannie's repo - videoplayer*/
+.video-player button {
+  background: transparent;
+  border: none;
+  font-weight: 700;
+  letter-spacing: 0.075rem;
+  padding: 0;
+  color: #fff;
+  z-index: 1;
+  border-radius: inherit;
+  cursor: pointer;
+  transition: 0.3s;
+  display: grid;
+  place-content: center;
+}
+
+/*afspil knap*/
+.video-player button svg {
+  inline-size: 100px;
+  display: block;
+  color: #d5c17a;
+
+  transition: 0.3s;
+}
+
+/*gemmer svg knap væk -  tilføjet selv*/
+.video-player button.hide {
+  opacity: 0;
+}
+
+.video-player.playing {
+  transform: none;
+}
+
+/*sørger for controls ikke er gemt bag svg container*/
+.playing button {
+  pointer-events: none;
 }
