@@ -29,32 +29,29 @@ main {
 }
 
 @font-face {
-  font-family: "castehlo";
-  src: url(fonts/CASTHELO.woff2) format("woff2");
-}
-
-@font-face {
-  font-family: "nostalgia";
+  font-family: "nostalgia", serif;
   src: url(fonts/nostalgia.woff2) format("woff2");
 }
 
 body {
   background-color: rgb(249, 246, 240);
+  line-height: 1.5;
 }
 
 h1 {
   text-align: center;
-  font-family: "castehlo";
+  font-family: "nostalgia", serif;
+  text-transform: uppercase;
 }
 
 h2 {
   text-align: center;
-  font-family: "castehlo";
+  font-family: "nostalgia", serif;
 }
 
 h3 {
   text-align: left;
-  font-family: "castehlo";
+  font-family: "nostalgia", serif;
 }
 
 .img {
@@ -62,7 +59,7 @@ h3 {
 }
 
 .p {
-  font-family: "Nuosu SIL", serif;
+  font-family: "nostalgia";
 }
 .banner {
   position: sticky;
@@ -89,7 +86,7 @@ a {
   height: 25px;
   text-align: center;
   align-items: center;
-  font-family: "noto serif display";
+  font-family: "nostalgia", serif;
   font-size: 1.2rem;
   text-decoration: none;
   color: black;
@@ -106,6 +103,15 @@ a:hover {
   color: rgb(35, 27, 186);
 }
 
+.main-menu a {
+  text-decoration: none;
+  color: black;
+  overflow: hidden;
+  display: block;
+  position: relative;
+  padding: 0.2em 0;
+}
+
 .main-menu {
   text-decoration: none;
   list-style: none;
@@ -114,16 +120,52 @@ a:hover {
   display: flex;
   flex-flow: row;
   justify-content: center;
-  font-family: "nuosu SIL", serif;
+  font-family: "nostalgia", serif;
+}
+
+.main-menu a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.1em;
+  background-color: rgb(35, 27, 186);
+  opacity: 2;
+  transition: opacity 300ms, transform 300ms;
+  transform: translate3d(-100%, 0, 0);
+}
+
+.main-menu a:hover::after,
+.main-menu a:focus::after {
+  transform: translate3d(0, 0, 0);
 }
 
 footer {
-  font-family: "nostalgia";
+  font-family: "nostalgia", serif;
   text-align: center;
   position: sticky;
   top: 100vh;
   max-width: none;
   padding: 10px;
+}
+
+/* home */
+
+.splash {
+  background-image: url(img/splash.png);
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: 25% 10%;
+  max-width: none;
+}
+
+.splash h1 {
+  font-family: "nostalgia", serif;
+  font-weight: 600;
+  font-size: 50px;
+  margin-top: 10px;
 }
 
 /* Projekter begynder her */
@@ -168,18 +210,15 @@ footer {
   gap: 10px;
 }
 
-img {
-  width: 100%;
+.image {
+  max-width: 100%;
 }
 
 .splash_web {
   background-size: cover;
   margin-bottom: 2rem;
-}
-.splash_h1 {
-  font-family: "nostalgia";
-  font-weight: 400;
-  font-size: 30px;
+  max-width: 100%;
+  grid-column: 1 / span 2;
 }
 
 .image1 {
@@ -265,7 +304,7 @@ figcaption {
   font-weight: 800;
   text-align: center;
   font-size: 20px;
-  font-family: "Roboto", sans-serif;
+  font-family: "nostalgia", serif;
 }
 
 .ux-col {
@@ -286,7 +325,7 @@ figcaption {
   flex-direction: column;
 }
 
-.animation-flex :lastchild {
+.animation-flex :last-child {
   margin-top: auto;
 }
 
@@ -295,7 +334,6 @@ figcaption {
 }
 
 .spillet {
-  max-width: 100%;
   grid-column: 1 / span 3;
 }
 
@@ -327,20 +365,13 @@ figcaption {
   display: flex;
   flex-direction: column;
 }
-
-video {
-  width: 100%;
-  height: auto;
-  display: block;
-  aspect-ratio: 16 / 9;
-}
-
-.hjemmeside_redesign {
+.redesign {
   grid-column: 1 / span 3;
 }
 
 .flagranke {
   height: auto;
+  max-width: 100%;
   margin-bottom: 1rem;
 }
 
@@ -355,10 +386,7 @@ video {
   grid-area: 1/1;
 }
 video {
-  border: 1px solid #d5c17a;
-  inline-size: 100%;
-  /*fylder kun container*/
-  border: 1px solid #d5c17a;
+  max-width: 100%;
 }
 
 /*video play knap layout*/
