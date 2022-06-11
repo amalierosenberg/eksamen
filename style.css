@@ -61,6 +61,7 @@ h3 {
 .p {
   font-family: "nostalgia";
 }
+
 .banner {
   position: sticky;
   top: 0;
@@ -197,17 +198,18 @@ footer {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 10px;
+  margin-bottom: 2rem;
 }
 
-.web-flex {
-  display: flex;
-  gap: 2rem;
-}
-
-.gallery {
+.grid-web2 {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 10px;
+}
+
+.grid-web2 img {
+  align-self: stretch;
+  object-fit: cover;
 }
 
 .image {
@@ -346,8 +348,8 @@ figcaption {
 
 .gallery {
   display: grid;
-  grid-template-rows: 1fr;
-  gap: 2rem;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
 }
 
 .gallery-flex {
@@ -367,6 +369,27 @@ figcaption {
 }
 .redesign {
   grid-column: 1 / span 3;
+}
+
+.grid-hjemmeside {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 1rem;
+  gap: 1rem;
+}
+
+.oprindelige {
+  grid-column: 1;
+}
+
+.redesign {
+  grid-column: 2;
+}
+
+.grid-wireframe {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
 }
 
 .flagranke {
