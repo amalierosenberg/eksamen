@@ -172,9 +172,13 @@ footer {
 /* Projekter begynder her */
 
 .cv {
-  display: flex;
-  grid-template-columns: repeat(4, 1fr);
+  display: grid;
+  grid-template-columns: 1fr 2fr auto 2fr 1fr;
   gap: 2rem;
+}
+
+.cv-flex-border {
+  border-right: solid;
 }
 
 .cv-flex {
@@ -182,12 +186,7 @@ footer {
   flex-direction: column;
 }
 
-.stilk2 {
-  max-width: 100%;
-  max-height: 550px;
-}
-
-.stilk1 {
+.stilk {
   max-width: 100%;
   max-height: 550px;
 }
