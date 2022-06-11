@@ -4,8 +4,7 @@ main {
   background-color: rgb(249, 246, 240);
 }
 
-/*
-@media (orientation: portrait) and (min-width: 500px) {
+@media (min-width: 900) and (max-width: 1200px) {
   .splash {
     width: 100%;
     height: auto;
@@ -13,15 +12,8 @@ main {
   }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
-  .splash {
-    width: 100%;
-    height: auto;
-  }
-} */
-
-@media (min-width: 600px) {
-  header {
+@media (min-width: 800px) and (max-width: 600px) {
+  .main-menu {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
@@ -251,6 +243,20 @@ footer {
   width: 100%;
 }
 
+@media (max-width: 600px) {
+  .grid-web {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .grid-web2 {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
 /* 03 UX */
 
 .container-produkter {
@@ -313,6 +319,21 @@ figcaption {
   gap: 2rem;
 }
 
+@media (max-width: 600px) {
+  .ux-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .container-produkter {
+    display: flex;
+    max-width: 100%;
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
 /* 04 Animation */
 
 .grid-animation {
@@ -336,6 +357,14 @@ figcaption {
 
 .spillet {
   grid-column: 1 / span 3;
+}
+
+@media (max-width: 600px) {
+  .grid-animation {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
 }
 
 /* 05 */
@@ -395,6 +424,32 @@ figcaption {
   height: auto;
   max-width: 100%;
   margin-bottom: 1rem;
+}
+
+@media (max-width: 600px) {
+  .grid-design {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .grid-hjemmeside {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .grid-wireframe {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
 }
 
 /* VIDEO */
