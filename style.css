@@ -368,6 +368,11 @@ figcaption {
     flex-direction: column;
     gap: 1rem;
   }
+
+  .img10 {
+    max-height: 100%;
+    margin-left: 8%;
+  }
 }
 
 /* 04 Animation */
@@ -455,12 +460,18 @@ figcaption {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
+  margin-top: 1rem;
 }
 
 .flagranke {
   height: auto;
   max-width: 100%;
   margin-bottom: 1rem;
+}
+
+.link-hjemmeside {
+  margin-left: 45%;
+  margin-top: 20%;
 }
 
 @media (max-width: 600px) {
@@ -486,6 +497,10 @@ figcaption {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+  }
+
+  .link-hjemmeside {
+    margin-left: 38%;
   }
 }
 
