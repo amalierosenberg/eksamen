@@ -13,12 +13,12 @@ main {
 
 @font-face {
   font-family: "nostalgia serif";
-  src: url(fonts/nostalgia.woff2) format("woff2");
+  src: url("fonts/nostalgia.woff2") format("woff2");
 }
 
 @font-face {
   font-family: "noto serif display";
-  src: url(fonts/notoserifdisplay_webfont.woff2) format("woff2");
+  src: url("fonts/notoserifdisplay_webfont.woff2") format("woff2");
 }
 
 body {
