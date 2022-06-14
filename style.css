@@ -4,11 +4,10 @@ main {
   background-color: rgb(249, 246, 240);
 }
 
-@media (min-width: 900) and (max-width: 1200px) {
+@media (max-width: 900px) {
   .splash {
     height: 100%;
-    height: auto;
-    aspect-ratio: 16/9;
+    object-position: 50% 50%;
   }
 }
 
@@ -185,10 +184,9 @@ footer {
 /* home */
 
 .splash {
-  background-image: url(img/splash.png);
+  background-image: url(img/splash.webp);
   height: 100vh;
   background-size: cover;
-  background-position: 0%;
   max-width: none;
 }
 
