@@ -12,8 +12,8 @@ main {
 }
 
 @font-face {
-  font-family: "nostalgia serif";
-  src: url("fonts/nostalgia.woff2") format("woff2");
+  font-family: "nostalgia", serif;
+  src: url("fonts/nostalgia-webfont.woff2") format("woff2");
 }
 
 body {
@@ -182,7 +182,7 @@ footer {
   background-image: url(img/splash.webp);
   height: 100vh;
   background-position: cover;
-  max-width: none;
+  max-width: 100%;
 }
 
 /* Projekter begynder her */
