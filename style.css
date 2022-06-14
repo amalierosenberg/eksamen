@@ -30,17 +30,20 @@ h1 {
   text-align: center;
   font-family: "nostalgia", serif;
   text-transform: uppercase;
+  letter-spacing: 0.2rem;
 }
 
 h2 {
   text-align: center;
   font-family: "nostalgia", serif;
   margin-bottom: 0px;
+  letter-spacing: 0.1rem;
 }
 
 h3 {
   text-align: center;
   font-family: "nostalgia", serif;
+  letter-spacing: 0.1rem;
 }
 
 .img {
@@ -51,6 +54,7 @@ p {
   font-family: "Tiro Gurmukhi", serif;
   text-transform: none;
   padding: 10px;
+  letter-spacing: 0.02rem;
 }
 
 .banner {
@@ -76,6 +80,7 @@ header {
   font-family: "nostalgia", serif;
   font-size: 40px;
   margin-top: 10px;
+  letter-spacing: 0.2rem;
 }
 a {
   display: inline-block;
@@ -172,6 +177,7 @@ footer {
   top: 100vh;
   max-width: none;
   padding: 10px;
+  letter-spacing: 0.02rem;
 }
 
 /* home */
@@ -202,6 +208,7 @@ footer {
 
 div {
   font-family: "Tiro Gurmukhi", serif;
+  letter-spacing: 0.02rem;
 }
 
 .cv-flex-border {
@@ -600,4 +607,12 @@ video {
 /*sørger for controls ikke er gemt bag svg container*/
 .playing button {
   pointer-events: none;
+}
+
+/* 06 */
+
+.portfolio-grid {
+  display: flex;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
 }
