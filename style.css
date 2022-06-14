@@ -6,19 +6,14 @@ main {
 
 @media (max-width: 900px) {
   .splash {
-    height: 100%;
+    height: 100vh;
     object-position: 50% 50%;
   }
 }
 
 @font-face {
   font-family: "nostalgia serif";
-  src: url(fonts/nostalgia.woff2) format("woff2");
-}
-
-@font-face {
-  font-family: "noto serif display";
-  src: url(fonts/notoserifdisplay_webfont.woff2) format("woff2");
+  src: url("fonts/nostalgia.woff2") format("woff2");
 }
 
 body {
@@ -186,7 +181,7 @@ footer {
 .splash {
   background-image: url(img/splash.webp);
   height: 100vh;
-  background-size: cover;
+  background-position: cover;
   max-width: none;
 }
 
